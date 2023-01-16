@@ -21,3 +21,11 @@ def calculate_output(program,y):
 
             if program_arr[0] == y:
                 return 100 * noun + verb
+
+if __name__ == "__main__":
+    with open("input_day_2.txt") as file:
+        program = file.read()
+        program = [int(x) for x in program.split(",")]
+        y = 19690720
+        output = calculate_output(program,y)
+        print(output)
