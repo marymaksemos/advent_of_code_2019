@@ -11,3 +11,13 @@ def intcode(nums):
             nums[idx3] = val1 * val2
         idx += 4
     return nums
+
+def calculate_output(program,y):
+    for noun in range(100):
+        for verb in range(100):
+            program[1] = noun
+            program[2] = verb
+            program_arr = intcode(program.copy())
+
+            if program_arr[0] == y:
+                return 100 * noun + verb
