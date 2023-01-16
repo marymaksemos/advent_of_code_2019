@@ -1,5 +1,5 @@
 import pytest
-from day_2_part_2 import intcode
+from day_2_part_2 import intcode,calculate_output
 def test_intcode():
     program = [1,0,0,0,99]
     result = intcode(program)
