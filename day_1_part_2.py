@@ -12,10 +12,10 @@ def total_fuel_required(masses):
     return total_fuel
     
     
- if __name__ == '__main__':
+if __name__ == '__main__':
    masses=[]
    with open("input_day_1part_1.txt")as file:
         for line in file:
             masses.append(int(line.strip()))
 
-    print(f"result : {total_fuel_required(masses)}")
+            print(f"result : {total_fuel_required(masses)}")
